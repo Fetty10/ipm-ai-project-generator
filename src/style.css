@@ -68,7 +68,13 @@ select {
   width: 84% !important;
 }
 
+.checkbox {
+  margin-bottom: 10px;
+  line-height: 2;
+}
+
 footer {
   text-align: center;
   font-size: 14px;
+  line-height: 1.5;
 }

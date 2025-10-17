@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>AI Project Generator | iProjectMaster</title>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>Instant Project Generator</h1>
+        <h1>INSTANT PROJECT GENERATOR</h1>
       </header>
       <main>
         <form id="project-generator-form">
@@ -18,13 +19,19 @@
             <input
               type="text"
               placeholder="Enter Project Topic (Optional)"
-              autofocus
               autocomplete="off"
               class="forms"
+              id="user-instructions"
             />
           </div>
           <div>
-            <select name="paper" id="paper" required class="forms">
+            <select
+              name="paper"
+              id="paper"
+              required
+              class="forms"
+              id="user-instructions"
+            >
               <option value="">Select Paper Type</option>
               <option value="Topic Coining">Topic Coining</option>
               <option value="Assignment">Assignment</option>
@@ -39,7 +46,13 @@
             </select>
           </div>
           <div>
-            <select name="degree" id="degree" required class="forms">
+            <select
+              name="degree"
+              id="degree"
+              required
+              class="forms"
+              id="user-instructions"
+            >
               <option value="">Select Degree of Study</option>
               <option value="ond">OND</option>
               <option value="hnd">HND</option>
@@ -50,7 +63,13 @@
             </select>
           </div>
           <div>
-            <select name="course" id="course" required class="forms">
+            <select
+              name="course"
+              id="course"
+              required
+              class="forms"
+              id="user-instructions"
+            >
               <option value="">Select Course of Study</option>
               <option value="Accounting">Accounting</option>
               <option value="Accounts Law">Accounts Law</option>
@@ -138,13 +157,66 @@
               <option value="Not Listed">Not Listed</option>
             </select>
           </div>
-          <div>
+
+          <div class="form" id="user-instructions">
             <input
               type="textarea"
               placeholder="Paste Guideline (Optional)"
               autocomplete="off"
               class="forms"
             />
+          </div>
+          <div class="checkbox" id="user-instructions">
+            <p>Select the chapters you want to download below (Optional):</p>
+            <input
+              type="checkbox"
+              name="chapter1"
+              value="chapter1"
+              id="chapter1"
+            />
+            <label for="chapter1">Chapter 1</label><br />
+            <input
+              type="checkbox"
+              name="chapter2"
+              value="chapter2"
+              id="chapter2"
+            />
+            <label for="chapter2">Chapter 2</label><br />
+            <input
+              type="checkbox"
+              name="chapter3"
+              value="chapter3"
+              id="chapter3"
+            />
+            <label for="chapter3">Chapter 3</label><br />
+            <input
+              type="checkbox"
+              name="chapter4"
+              value="chapter4"
+              id="chapter4"
+            />
+            <label for="chapter4">Chapter 4</label><br />
+            <input
+              type="checkbox"
+              name="chapter5"
+              value="chapter5"
+              id="chapter5"
+            />
+            <label for="chapter5">Chapter 5</label><br />
+            <input
+              type="checkbox"
+              name="chapter6"
+              value="chapter6"
+              id="chapter6"
+            />
+            <label for="chapter6">Chapter 6</label><br />
+            <input
+              type="checkbox"
+              name="chapter7"
+              value="chapter7"
+              id="chapter7"
+            />
+            <label for="chapter7">Chapter 7</label><br />
           </div>
           <div>
             <input type="submit" class="submit-button" />
@@ -153,7 +225,7 @@
         <div class="ready" id="project"></div>
       </main>
       <footer>
-        2025 (c) All Rights Reserved -
+        2025 &copy; All Rights Reserved. <br />
         <a href="https://www.iprojectmaster.com" target="_blank"
           >Project Topics for Final Year Students</a
         >
