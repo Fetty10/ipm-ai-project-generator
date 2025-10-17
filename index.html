@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Project Generator | iProjectMaster</title>
     <link rel="stylesheet" href="src/style.css" />
   </head>
@@ -12,7 +13,7 @@
         <h1>Instant Project Generator</h1>
       </header>
       <main>
-        <form action="">
+        <form id="project-generator-form">
           <div>
             <input
               type="text"
@@ -149,12 +150,8 @@
             <input type="submit" class="submit-button" />
           </div>
         </form>
-        <div class="ready">
-          Your project is ready!<br />
-          <a href="">Download Here</a>
-        </div>
+        <div class="ready" id="project"></div>
       </main>
-      <script src="src/index.js"></script>
       <footer>
         2025 (c) All Rights Reserved -
         <a href="https://www.iprojectmaster.com" target="_blank"
@@ -162,5 +159,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
