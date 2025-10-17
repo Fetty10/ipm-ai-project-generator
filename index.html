@@ -7,141 +7,160 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <header>
-      <h1>Instant Project Writer</h1>
-    </header>
-    <main>
-      <form action="">
-        <input
-          type="text"
-          placeholder="Enter Project Topic"
-          autofocus
-          autocomplete="off"
-          required
-        />
-        <select name="paper" id="paper" required>
-          <option value="Topic Coining">Topic Coining</option>
-          <option value="Assignment">Assignment</option>
-          <option value="Proposal">Proposal</option>
-          <option value="Essay">Essay</option>
-          <option value="Project">Project</option>
-          <option value="Term Paper">Term Paper</option>
-          <option value="Research Paper">Research Paper</option>
-          <option value="Dissertation">Dissertation</option>
-          <option value="Thesis">Thesis</option>
-          <option value="Not Listed">Not Listed</option>
-        </select>
-        <select name="degree" id="degree" required>
-          <option value="selected">Select Degree of Study</option>
-          <option value="ond">OND</option>
-          <option value="hnd">HND</option>
-          <option value="bsc">BSc.</option>
-          <option value="msc">MSc.</option>
-          <option value="phd">PhD</option>
-          <option value="Not Listed">Not Listed</option>
-        </select>
-        <select name="course" id="course" required>
-          <option value="selected">Select Course of Study</option>
-          <option value="Accounting">Accounting</option>
-          <option value="Accounts Law">Accounts Law</option>
-          <option value="Advertising">Advertising</option>
-          <option value="Aeronautical Engineering">
-            Aeronautical Engineering
-          </option>
-          <option value="Agency Law">Agency Law</option>
-          <option value="Agriculture">Agriculture</option>
-          <option value="Animal Management">Animal Management</option>
-          <option value="Anthropology">Anthropology</option>
-          <option value="Architecture">Architecture</option>
-          <option value="Art">Art</option>
-          <option value="Astrophysics">Astrophysics</option>
-          <option value="Biochemistry">Biochemistry</option>
-          <option value="Biology">Biology</option>
-          <option value="Biotechnology">Biotechnology</option>
-          <option value="Business">Business</option>
-          <option value="Chemical Engineering">Chemical Engineering</option>
-          <option value="Chemistry">Chemistry</option>
-          <option value="Child Care">Child Care</option>
-          <option value="Civil Engineering">Civil Engineering</option>
-          <option value="Civil Litigation Law">Civil Litigation Law</option>
-          <option value="Classics">Classics</option>
-          <option value="Commercial Law">Commercial Law</option>
-          <option value="Commercial Property Law">
-            Commercial Property Law
-          </option>
-          <option value="Communication Strategies">
-            Communication Strategies
-          </option>
-          <option value="Communications &amp; Media">
-            Communications &amp; Media
-          </option>
-          <option value="Communications">Communications</option>
-          <option value="Company Law / Business Law">
-            Company Law / Business Law
-          </option>
-          <option value="Comparative Law">Comparative Law</option>
-          <option value="Computer Engineering">Computer Engineering</option>
-          <option value="Computing">Computing</option>
-          <option value="Constitutional / Administrative Law">
-            Constitutional / Administrative Law
-          </option>
-          <option value="Consumer Law">Consumer Law</option>
-          <option value="Contract Law">Contract Law</option>
-          <option value="Criminal Law">Criminal Law</option>
-          <option value="E-commerce">E-commerce</option>
-          <option value="Economics">Economics</option>
-          <option value="Education">Education</option>
-          <option value="Engineering">Engineering</option>
-          <option value="English">English</option>
-          <option value="Finance">Finance</option>
-          <option value="Healthcare &amp; Medicine">
-            Healthcare &amp; Medicine
-          </option>
-          <option value="History">History</option>
-          <option value="Human Resource">Human Resource</option>
-          <option value="Investment">Investment</option>
-          <option value="IT &amp; Technology">IT &amp; Technology</option>
-          <option value="Journalism">Journalism</option>
-          <option value="Law&lt;/option&gt;">Law&lt;/option&gt;</option>
-          <option value="Literature">Literature</option>
-          <option value="Logistics">Logistics</option>
-          <option value="Marketing">Marketing</option>
-          <option value="Medicine &amp; Dentistry">
-            Medicine &amp; Dentistry
-          </option>
-          <option value="Movies">Movies</option>
-          <option value="Nursing">Nursing</option>
-          <option value="Painting">Painting</option>
-          <option value="Pathogenesis of disease">
-            Pathogenesis of disease
-          </option>
-          <option value="Physical Studies">Physical Studies</option>
-          <option value="Political Science">Political Science</option>
-          <option value="Psychology">Psychology</option>
-          <option value="Public relations">Public relations</option>
-          <option value="Social Work">Social Work</option>
-          <option value="Sociology">Sociology</option>
-          <option value="Theatre">Theatre</option>
-          <option value="Trade">Trade</option>
-          <option value="Veterinary ">Veterinary</option>
-          <option value="Zoology">Zoology</option>
-          <option value="Not Listed">Not Listed</option>
-        </select>
-        <input
-          type="text"
-          placeholder="Paste Guideline (Optional)"
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>Your project is ready!</div>
-    </main>
-    <script src="src/index.js"></script>
-    <footer>
-      2025 (c) All Rights Reserved -
-      <a href="https://www.iprojectmaster.com" target="_blank"
-        >Project Topics for Final Year Students</a
-      >
-    </footer>
+    <div class="container">
+      <header>
+        <h1>Instant Project Generator</h1>
+      </header>
+      <main>
+        <form action="">
+          <div>
+            <input
+              type="text"
+              placeholder="Enter Project Topic (Optional)"
+              autofocus
+              autocomplete="off"
+              class="forms"
+            />
+          </div>
+          <div>
+            <select name="paper" id="paper" required class="forms">
+              <option value="">Select Paper Type</option>
+              <option value="Topic Coining">Topic Coining</option>
+              <option value="Assignment">Assignment</option>
+              <option value="Proposal">Proposal</option>
+              <option value="Essay">Essay</option>
+              <option value="Project">Project</option>
+              <option value="Term Paper">Term Paper</option>
+              <option value="Research Paper">Research Paper</option>
+              <option value="Dissertation">Dissertation</option>
+              <option value="Thesis">Thesis</option>
+              <option value="Not Listed">Not Listed</option>
+            </select>
+          </div>
+          <div>
+            <select name="degree" id="degree" required class="forms">
+              <option value="">Select Degree of Study</option>
+              <option value="ond">OND</option>
+              <option value="hnd">HND</option>
+              <option value="bsc">BSc.</option>
+              <option value="msc">MSc.</option>
+              <option value="phd">PhD</option>
+              <option value="Not Listed">Not Listed</option>
+            </select>
+          </div>
+          <div>
+            <select name="course" id="course" required class="forms">
+              <option value="">Select Course of Study</option>
+              <option value="Accounting">Accounting</option>
+              <option value="Accounts Law">Accounts Law</option>
+              <option value="Advertising">Advertising</option>
+              <option value="Aeronautical Engineering">
+                Aeronautical Engineering
+              </option>
+              <option value="Agency Law">Agency Law</option>
+              <option value="Agriculture">Agriculture</option>
+              <option value="Animal Management">Animal Management</option>
+              <option value="Anthropology">Anthropology</option>
+              <option value="Architecture">Architecture</option>
+              <option value="Art">Art</option>
+              <option value="Astrophysics">Astrophysics</option>
+              <option value="Biochemistry">Biochemistry</option>
+              <option value="Biology">Biology</option>
+              <option value="Biotechnology">Biotechnology</option>
+              <option value="Business">Business</option>
+              <option value="Chemical Engineering">Chemical Engineering</option>
+              <option value="Chemistry">Chemistry</option>
+              <option value="Child Care">Child Care</option>
+              <option value="Civil Engineering">Civil Engineering</option>
+              <option value="Civil Litigation Law">Civil Litigation Law</option>
+              <option value="Classics">Classics</option>
+              <option value="Commercial Law">Commercial Law</option>
+              <option value="Commercial Property Law">
+                Commercial Property Law
+              </option>
+              <option value="Communication Strategies">
+                Communication Strategies
+              </option>
+              <option value="Communications &amp; Media">
+                Communications &amp; Media
+              </option>
+              <option value="Communications">Communications</option>
+              <option value="Company Law / Business Law">
+                Company Law / Business Law
+              </option>
+              <option value="Comparative Law">Comparative Law</option>
+              <option value="Computer Engineering">Computer Engineering</option>
+              <option value="Computing">Computing</option>
+              <option value="Constitutional / Administrative Law">
+                Constitutional / Administrative Law
+              </option>
+              <option value="Consumer Law">Consumer Law</option>
+              <option value="Contract Law">Contract Law</option>
+              <option value="Criminal Law">Criminal Law</option>
+              <option value="E-commerce">E-commerce</option>
+              <option value="Economics">Economics</option>
+              <option value="Education">Education</option>
+              <option value="Engineering">Engineering</option>
+              <option value="English">English</option>
+              <option value="Finance">Finance</option>
+              <option value="Healthcare &amp; Medicine">
+                Healthcare &amp; Medicine
+              </option>
+              <option value="History">History</option>
+              <option value="Human Resource">Human Resource</option>
+              <option value="Investment">Investment</option>
+              <option value="IT &amp; Technology">IT &amp; Technology</option>
+              <option value="Journalism">Journalism</option>
+              <option value="Law&lt;/option&gt;">Law&lt;/option&gt;</option>
+              <option value="Literature">Literature</option>
+              <option value="Logistics">Logistics</option>
+              <option value="Marketing">Marketing</option>
+              <option value="Medicine &amp; Dentistry">
+                Medicine &amp; Dentistry
+              </option>
+              <option value="Movies">Movies</option>
+              <option value="Nursing">Nursing</option>
+              <option value="Painting">Painting</option>
+              <option value="Pathogenesis of disease">
+                Pathogenesis of disease
+              </option>
+              <option value="Physical Studies">Physical Studies</option>
+              <option value="Political Science">Political Science</option>
+              <option value="Psychology">Psychology</option>
+              <option value="Public relations">Public relations</option>
+              <option value="Social Work">Social Work</option>
+              <option value="Sociology">Sociology</option>
+              <option value="Theatre">Theatre</option>
+              <option value="Trade">Trade</option>
+              <option value="Veterinary ">Veterinary</option>
+              <option value="Zoology">Zoology</option>
+              <option value="Not Listed">Not Listed</option>
+            </select>
+          </div>
+          <div>
+            <input
+              type="textarea"
+              placeholder="Paste Guideline (Optional)"
+              autocomplete="off"
+              class="forms"
+            />
+          </div>
+          <div>
+            <input type="submit" class="submit-button" />
+          </div>
+        </form>
+        <div class="ready">
+          Your project is ready!<br />
+          <a href="">Download Here</a>
+        </div>
+      </main>
+      <script src="src/index.js"></script>
+      <footer>
+        2025 (c) All Rights Reserved -
+        <a href="https://www.iprojectmaster.com" target="_blank"
+          >Project Topics for Final Year Students</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
